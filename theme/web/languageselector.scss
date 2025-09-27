@@ -1,0 +1,40 @@
+/* Language selector overrides */
+.mx-name-languageSelector1 {
+    button.mx-languageselector,
+    .mx-languageselector-button,
+    .mx-languageselector {
+        color: #000000 !important;
+        
+        span,
+        .mx-text {
+            color: #000000 !important;
+        }
+    }
+}
+
+/* Direct class overrides */
+.mx-name-languageSelector1 {
+    * {
+        color: #000000 !important;
+    }
+}
+
+/* Specific class overrides */
+.mx-languageselector button,
+.mx-languageselector-button,
+.mx-text,
+.current-language-text {
+    color: #000000 !important;
+}
+
+/* Override for any element inside language selector */
+[class*="languageselector"] * {
+    color: #000000 !important;
+}
+
+/* Specific button override */
+.region-topbar {
+    .mx-name-languageSelector1 button {
+        color: #000000 !important;
+    }
+}

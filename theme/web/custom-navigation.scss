@@ -1,0 +1,89 @@
+/* Custom Navigation Styles */
+.region-topbar {
+    .mx-navbar {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 2rem;
+        transition: all 0.3s ease;
+
+        &.scrolled {
+            padding: 0.3rem 2rem;
+        }
+
+        ul.nav {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            > li.mx-navbar-item {
+                margin: 0 1rem;
+
+                > a {
+                    color: #2D3748;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding: 0.5rem 0;
+                    position: relative;
+                    transition: color 0.3s ease;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #0056B3;
+                        transition: width 0.3s ease;
+                    }
+
+                    &:hover {
+                        color: #0056B3;
+                        background: none;
+
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+
+                    &.active {
+                        color: #0056B3;
+                        background: none;
+
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Logo styles */
+        .navbar-brand {
+            padding: 0.5rem 0;
+            
+            img {
+                height: 40px;
+                transition: height 0.3s ease;
+            }
+        }
+
+        /* Button styles */
+        .mx-button {
+            border-radius: 4px;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s ease;
+            
+            &.btn-primary {
+                background-color: #0056B3;
+                border-color: #0056B3;
+                
+                &:hover {
+                    background-color: #004494;
+                    border-color: #004494;
+                }
+            }
+        }
+    }
+}

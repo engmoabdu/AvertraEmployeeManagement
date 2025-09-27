@@ -1,0 +1,26 @@
+// Override navigation styles
+.region-topbar {
+    .mx-navbar {
+        .mx-menubar {
+            &.mx-name-menuBar1 {
+                .mx-menubar-item {
+                    > a {
+                        color: #000000 !important;
+                        font-weight: 500 !important;
+                        
+                        &:hover, &:focus, &.active {
+                            color: #000000 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Additional specificity for menu items
+.mx-name-menuBar1.hidden-xs.hide-icons {
+    .mx-menubar-item > a {
+        color: #000000 !important;
+    }
+}
