@@ -1,0 +1,43 @@
+@import "custom-variables";
+@import "languageselector";
+
+// Force black color for navigation items
+.mx-navbar {
+    ul.nav > li.mx-navbar-item > a {
+        color: #000000 !important;
+    }
+}
+
+.mx-menubar.mx-name-menuBar1 {
+    .mx-menubar-item > a {
+        color: #000000 !important;
+        
+        &:hover, &:focus, &.active {
+            color: #000000 !important;
+        }
+    }
+}
+@import "custom-overrides";
+
+// Custom styles
+/* Reset and override navigation colors */
+.region-topbar {
+    .mx-navbar {
+        .nav > li.mx-menubar-item > a {
+            color: #000000 !important;
+        }
+    }
+}
+.mx-name-menuBar1.hidden-xs {
+    .mx-menubar-item {
+        > a {
+            color: #000000 !important;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            
+            &:hover {
+                color: #333333 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+/* Custom menu styles for TopBar */
+.mx-name-menuBar1.hidden-xs {
+    .mx-menubar-item {
+        a {
+            color: #000000 !important; /* Force black color */
+            font-weight: 500;
+            
+            &:hover {
+                color: #333333 !important; /* Slightly lighter on hover */
+            }
+        }
+    }
+}
+
+/* Language selector styles */
+.current-language-text,
+.widget-language-selector {
+    color: #000000 !important;
+}
+
+/* Additional specificity for language selector */
+.mx-name-languageSelector1 {
+    .current-language-text {
+        color: #000000 !important;
+    }
+    
+    .widget-language-selector {
+        color: #000000 !important;
+    }
+}
+
+/* Ensure the text stays black on hover and focus */
+.widget-language-selector:hover,
+.widget-language-selector:focus,
+.current-language-text:hover,
+.current-language-text:focus {
+    color: #000000 !important;
+}
