@@ -17,8 +17,6 @@
 /vendorlib/temp/
 .DS_Store
 /.svn/
-/mprcontents/mprjournal*
 .idea
 .vscode
 *.css.map
-mprcontents
