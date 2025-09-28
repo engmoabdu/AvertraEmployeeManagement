@@ -55,6 +55,7 @@ $dg-item-min-height: 32px;
             border-bottom-right-radius: 0;
             border-right: none;
             height: 100%;
+            background-color: #D3F4F8;
 
             &:before {
                 justify-content: center;
@@ -264,7 +265,7 @@ Icons
     height: 20px;
     width: 20px;
     margin: 6px 8px;
-    font-family: "datagrid-filters";
+    font-family: "datagrid-filters", serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -273,7 +274,7 @@ Icons
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "datagrid-filters";
+    font-family: "datagrid-filters", serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
