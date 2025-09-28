@@ -3169,7 +3169,7 @@
   /* Topbar mobile */
   --m-header-height: 45px;
   --m-header-bg: #FFFFFF;
-  --m-header-color: #fff;
+  --m-header-color: #000;
   --m-header-title-size: 16px;
   /* Navbar Brand Name / For your company, product, or project name (used in layouts/base/) */
   --navbar-brand-name: #fff;
@@ -18990,7 +18990,7 @@ input[type=checkbox] + .control-label {
   height: 45px;
   padding: 0;
   text-align: initial;
-  color: #fff;
+  color: #000;
   background-color: #FFFFFF;
   box-shadow: 0px 2px 2px rgba(194, 196, 201, 0.30354);
 }
@@ -19028,7 +19028,7 @@ input[type=checkbox] + .control-label {
   width: 100%;
   margin: 0;
   text-overflow: ellipsis;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   line-height: 45px;
 }
@@ -25248,15 +25248,15 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 
 .alert-primary,
 .alert {
-  color: #172c89;
-  border-color: #1b34a0;
-  background-color: #e9edfc;
+  color: #167985;
+  border-color: #1a8d9b;
+  background-color: #e9fafc;
 }
 
 .alert-secondary {
-  color: #172c89;
-  border-color: #1b34a0;
-  background-color: #e9edfc;
+  color: #167985;
+  border-color: #1a8d9b;
+  background-color: #e9fafc;
 }
 
 .alert-success {
@@ -26001,10 +26001,10 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   margin-right: -12px;
 }
 .table .th .column-resizer:hover .column-resizer-bar {
-  background-color: var(--brand-primary, #264ae5);
+  background-color: var(--brand-primary, #25C9DE);
 }
 .table .th .column-resizer:active .column-resizer-bar {
-  background-color: var(--brand-primary, #264ae5);
+  background-color: var(--brand-primary, #25C9DE);
 }
 .table .th .column-resizer .column-resizer-bar {
   height: 100%;
@@ -26045,7 +26045,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   outline: none;
 }
 .table .th .column-header:focus-visible {
-  outline: 1px solid var(--brand-primary, #264ae5);
+  outline: 1px solid var(--brand-primary, #25C9DE);
 }
 .table .th .filter {
   display: flex;
@@ -26136,7 +26136,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   outline-width: 1px;
   outline-style: solid;
   outline-offset: -1px;
-  outline-color: var(--brand-primary, #264ae5);
+  outline-color: var(--brand-primary, #25C9DE);
 }
 .table .td.clickable {
   cursor: pointer;
@@ -26198,7 +26198,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   background-color: transparent;
 }
 .pagination-bar .pagination-button:hover {
-  color: var(--brand-primary, #264ae5);
+  color: var(--brand-primary, #25C9DE);
   border-color: transparent;
   background-color: transparent;
 }
@@ -26210,7 +26210,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   outline: none;
 }
 .pagination-bar .pagination-button:focus-visible {
-  outline: 1px solid var(--brand-primary, #264ae5);
+  outline: 1px solid var(--brand-primary, #25C9DE);
 }
 .pagination-bar .pagination-icon {
   position: relative;
@@ -26332,7 +26332,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   --widget-combobox-spinner-loader: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
   animation: rotate 1s infinite linear;
   aspect-ratio: 1;
-  background: var(--brand-primary, #264ae5);
+  background: var(--brand-primary, #25C9DE);
   border-radius: 50%;
   mask: var(--widget-combobox-spinner-loader);
   mask-composite: subtract;
@@ -26432,12 +26432,12 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 .react-datepicker__day:hover,
 .react-datepicker__day--in-range:hover {
   border-radius: 50%;
-  color: var(--brand-primary, #264ae5);
+  color: var(--brand-primary, #25C9DE);
   background-color: var(--gray-ligter, #f8f8f8);
 }
 
 .react-datepicker__day-name {
-  color: var(--brand-primary, #264ae5);
+  color: var(--brand-primary, #25C9DE);
   font-weight: bold;
 }
 
@@ -26447,7 +26447,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 
 .react-datepicker__day--today:not(.react-datepicker__day--in-range),
 .react-datepicker__day--keyboard-selected {
-  color: var(--brand-primary, #264ae5);
+  color: var(--brand-primary, #25C9DE);
   background-color: var(--gray-ligter, #f8f8f8);
 }
 
@@ -26462,7 +26462,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 .react-datepicker__day--range-start,
 .react-datepicker__day--range-end,
 .react-datepicker__day--in-selecting-range.react-datepicker__day--selecting-range-start {
-  background-color: var(--brand-primary, #264ae5);
+  background-color: var(--brand-primary, #25C9DE);
   color: var(--header-text-color, #fff);
 }
 .react-datepicker__day--selected:hover,
@@ -26470,7 +26470,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 .react-datepicker__day--range-end:hover,
 .react-datepicker__day--in-selecting-range.react-datepicker__day--selecting-range-start:hover {
   border-radius: 50%;
-  background-color: var(--brand-primary, #264ae5);
+  background-color: var(--brand-primary, #25C9DE);
   color: var(--header-text-color, #fff);
 }
 
@@ -26489,12 +26489,12 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 .react-datepicker__quarter-text--in-range,
 .react-datepicker__year-text--in-range,
 .react-datepicker__day--selecting-range-start):hover {
-  background-color: var(--brand-primary, #264ae5);
+  background-color: var(--brand-primary, #25C9DE);
   color: var(--header-text-color, #fff);
 }
 
 button.react-datepicker__close-icon::after {
-  background-color: var(--brand-primary, #264ae5);
+  background-color: var(--brand-primary, #25C9DE);
 }
 
 .react-datepicker__current-month {
@@ -26567,6 +26567,7 @@ Space between the fields and the popup
   border-bottom-right-radius: 0;
   border-right: none;
   height: 100%;
+  background-color: #D3F4F8;
 }
 .filter-selector .filter-selector-content .filter-selector-button:before {
   justify-content: center;
@@ -26604,7 +26605,7 @@ Space between the fields and the popup
 .filter-selectors .filter-listitem.filter-selected,
 .filter-selectors li.filter-selected {
   background-color: var(--gray-lighter, #f8f8f8);
-  color: var(--brand-primary, #264ae5);
+  color: var(--brand-primary, #25C9DE);
 }
 .filter-selectors .filter-listitem:hover, .filter-selectors .filter-listitem.filter-highlighted,
 .filter-selectors li:hover,
@@ -26632,7 +26633,7 @@ Space between the fields and the popup
 }
 .dropdown-list li.filter-selected {
   background-color: var(--gray-lighter, #f8f8f8);
-  color: var(--brand-primary, #264ae5);
+  color: var(--brand-primary, #25C9DE);
 }
 .dropdown-list li:hover, .dropdown-list li:focus {
   background-color: var(--gray-lighter, #f8f8f8);
@@ -26725,7 +26726,7 @@ Space between the fields and the popup
 }
 .dropdown-container .dropdown-list li.filter-selected {
   background-color: var(--gray-lighter, #f8f8f8);
-  color: var(--brand-primary, #264ae5);
+  color: var(--brand-primary, #25C9DE);
 }
 .dropdown-container .dropdown-list li:hover, .dropdown-container .dropdown-list li:focus {
   background-color: var(--gray-lighter, #f8f8f8);
@@ -26749,7 +26750,7 @@ Icons
   height: 20px;
   width: 20px;
   margin: 6px 8px;
-  font-family: "datagrid-filters";
+  font-family: "datagrid-filters", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26758,7 +26759,7 @@ Icons
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "datagrid-filters";
+  font-family: "datagrid-filters", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27379,7 +27380,7 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
   outline: none;
 }
 .widget-gallery .widget-gallery-clickable:focus-visible {
-  outline: 1px solid var(--brand-primary, #264ae5);
+  outline: 1px solid var(--brand-primary, #25C9DE);
   outline-offset: -1px;
 }
 .widget-gallery:not(.widget-gallery-disable-selected-items-highlight) .widget-gallery-item.widget-gallery-clickable.widget-gallery-selected {
