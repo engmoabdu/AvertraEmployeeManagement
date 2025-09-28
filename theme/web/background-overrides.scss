@@ -1,0 +1,52 @@
+// Background color overrides
+:root {
+    --bg-color: #FFFFFF;
+}
+
+body,
+.mx-page,
+.mx-scrollcontainer-wrapper,
+.mx-layout-content,
+.region-topbar {
+    background-color: #FFFFFF !important;
+}
+
+// Navigation bar specific styles
+.navbar {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.region-topbar {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+// Ensure proper contrast for navigation items
+.mx-navbar ul.nav > li.mx-navbar-item > a,
+.mx-menubar-item > a {
+    color: #333333 !important;
+}
+
+// Topbar background
+.mx-header {
+    background-color: #FFFFFF !important;
+}
+
+// Make sure all page containers have white background
+.mx-container-nested,
+.mx-layout-grid,
+.mx-layoutgrid-wrapper,
+.mx-layout-spacing {
+    background-color: #FFFFFF !important;
+}
+
+// Content background
+.mx-content {
+    background-color: #FFFFFF !important;
+}
+
+// Sidebar background if present
+.mx-sidenavigation,
+.mx-scrollcontainer-sidebar {
+    background-color: #FFFFFF !important;
+}

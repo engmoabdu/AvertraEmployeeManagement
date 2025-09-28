@@ -1,0 +1,124 @@
+// Override hover and selection colors
+$hover-color: #24c9dd;
+
+// Navigation
+$navigation-color-hover: $hover-color;
+$navigation-color-active: $hover-color;
+$navigation-sub-color-hover: $hover-color;
+$navigation-sub-color-active: $hover-color;
+
+// Links
+$link-hover-color: $hover-color;
+
+// Buttons
+$btn-primary-bg-hover: $hover-color;
+$btn-default-bg-hover: rgba($hover-color, 0.1);
+
+// Form inputs
+$form-input-border-focus-color: $hover-color;
+
+// Grid/List selections
+$grid-bg-hover: rgba($hover-color, 0.1);
+$grid-bg-selected: rgba($hover-color, 0.2);
+$grid-bg-selected-hover: rgba($hover-color, 0.3);
+
+// Tabs
+$tabs-lined-border-color: $hover-color;
+$tabs-bg-active: $hover-color;
+
+// Timeline
+$timeline-icon-color: $hover-color;
+$timeline-event-time-color: $hover-color;
+
+// Interactive elements hover states
+.btn,
+.widget-button,
+.mx-link,
+.mx-menubar-item,
+.mx-grid-control-button {
+    &:hover,
+    &:focus,
+    &.active {
+        color: $hover-color !important;
+        border-color: $hover-color !important;
+    }
+}
+
+// List view and data grid selections
+.mx-grid-row:hover,
+.mx-listview-item:hover {
+    background-color: rgba($hover-color, 0.1) !important;
+}
+
+.mx-grid-row-selected,
+.mx-listview-item.selected {
+    background-color: rgba($hover-color, 0.2) !important;
+    
+    &:hover {
+        background-color: rgba($hover-color, 0.3) !important;
+    }
+}
+
+// Form controls focus states
+.form-control:focus,
+.mx-textarea:focus,
+.mx-textinput:focus {
+    border-color: $hover-color !important;
+    box-shadow: 0 0 0 0.2rem rgba($hover-color, 0.25) !important;
+}
+
+// Navigation items
+.mx-navbar ul.nav > li.mx-navbar-item > a {
+    &:hover,
+    &:focus,
+    &.active {
+        color: $hover-color !important;
+        
+        &:after {
+            background-color: $hover-color !important;
+        }
+    }
+}
+
+// Tabs
+.mx-tabcontainer-tabs > li.active > a {
+    border-color: $hover-color !important;
+    color: $hover-color !important;
+}
+
+// Cards
+.widget-card {
+    &:hover {
+        border-color: $hover-color !important;
+    }
+}
+
+// Progress bars
+.progress-bar {
+    background-color: $hover-color;
+}
+
+// Checkboxes and radio buttons
+.checkbox input:checked + label::before,
+.radio input:checked + label::before {
+    background-color: $hover-color !important;
+    border-color: $hover-color !important;
+}
+
+// Dropdown items
+.dropdown-menu > li > a {
+    &:hover,
+    &:focus {
+        background-color: rgba($hover-color, 0.1) !important;
+        color: $hover-color !important;
+    }
+}
+
+// Timeline elements
+.widget-timeline-event {
+    &.clickable:hover {
+        .widget-timeline-icon {
+            background-color: $hover-color !important;
+        }
+    }
+}

@@ -20,3 +20,5 @@
 /mprcontents/mprjournal*
 .idea
 .vscode
+*.css.map
+mprcontents

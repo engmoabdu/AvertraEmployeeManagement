@@ -1,0 +1,159 @@
+// Custom animations and styles to match Avertra's design
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// Hover animations for cards and interactive elements
+.card,
+.widget-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// Button hover effects
+.btn-primary,
+.widget-button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(255, 255, 255, 0.2),
+            transparent
+        );
+        transition: all 0.6s ease;
+    }
+    
+    &:hover:before {
+        left: 100%;
+    }
+}
+
+// Fade-in animation classes
+.animate-fade-in {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-scale-in {
+    animation: fadeInScale 0.5s ease forwards;
+}
+
+.animate-slide-in {
+    animation: slideInFromRight 0.5s ease forwards;
+}
+
+// Staggered animation delays for lists
+.list-item {
+    opacity: 0;
+    
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            animation: fadeInUp 0.5s ease forwards;
+            animation-delay: #{$i * 0.1}s;
+        }
+    }
+}
+
+// Smooth scroll behavior
+html {
+    scroll-behavior: smooth;
+}
+
+// Enhanced focus states
+:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    transition: box-shadow 0.2s ease;
+}
+
+// Progress bar animation
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+// Navigation hover effects
+.navigation-item {
+    position: relative;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition: width 0.3s ease;
+    }
+    
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+// Image hover effects
+.image-hover {
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+// Skeleton loading animation
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.skeleton-loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite linear;
+}

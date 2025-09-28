@@ -1,22 +1,70 @@
 @import "custom-variables";
+@import "custom-animations";
+@import "custom-theme";
+@import "hover-variables";
+@import "background-overrides";
 @import "languageselector";
 
-// Force black color for navigation items
+// Navigation styles with Avertra theme
 .mx-navbar {
+    background-color: #FFFFFF !important;
+    border-bottom: 1px solid #e0e0e0;
+    
     ul.nav > li.mx-navbar-item > a {
-        color: #000000 !important;
+        color: var(--avertra-text) !important;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #24c9dd;
+            transition: width 0.3s ease;
+        }
+        
+        &:hover {
+            color: #24c9dd !important;
+            
+            &:after {
+                width: 100%;
+            }
+        }
     }
 }
 
 .mx-menubar.mx-name-menuBar1 {
     .mx-menubar-item > a {
-        color: #000000 !important;
+        color: var(--avertra-text) !important;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #24c9dd;
+            transition: width 0.3s ease;
+        }
         
         &:hover, &:focus, &.active {
-            color: #000000 !important;
+            color: #24c9dd !important;
+            
+            &:after {
+                width: 100%;
+            }
         }
     }
 }
+
 @import "custom-overrides";
 
 // Custom styles
@@ -24,19 +72,23 @@
 .region-topbar {
     .mx-navbar {
         .nav > li.mx-menubar-item > a {
-            color: #000000 !important;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                color: #24c9dd !important;
+            }
         }
     }
 }
+
 .mx-name-menuBar1.hidden-xs {
     .mx-menubar-item {
         > a {
-            color: #000000 !important;
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
             
             &:hover {
-                color: #333333 !important;
+                color: #24c9dd !important;
             }
         }
     }
